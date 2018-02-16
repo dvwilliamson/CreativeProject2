@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Browse</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script text="type/javascript" src="/CreativeProject2/scripts/main.js"></script>
+    <script text="type/javascript" src="/CreativeProject2/scripts/browse.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="navbar" class="browse"></div>
+	
+	<div id="main_content">
+		<h1 class="header">Browse</h1>
+		<div id="breed_select">
+			<div class="dropdown">
+				<button onclick="toggleDropDown()" class="dropbtn">Browse Breeds</button>
+				<div id="breed_dropdown" class="dropdown-content">
+				    <input type="text" placeholder="Search.." id="browseInput" onkeyup="filterFunction()">
+				</div>
+			</div>
+		</div>
+		<div id="browsing_box"></div>
+	</div>
+
+	<div id="footer"></div>
+	
+</body>
+</html>
+

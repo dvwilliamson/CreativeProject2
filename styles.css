@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kranky', cursive;
+    min-height:100vh;
+    background: linear-gradient(rgba(76,255,201, 0.2), white);
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+/*******************************************************************************/
+
+div#navbar nav,
+div#footer footer,
+div#main_content{
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.slim_content{
+    max-width: 576px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-right:38px;
+    padding-left:38px;
+}
+
+p{ font-size:23px; }
+
+
+/*******************************************************************************/
+/** NAVBAR **/
+#navbar nav li { float: left; }
+#navbar{ background-color:#007F59; }
+#navbar nav .active { background-color: #00CC8E; }
+/*#navbar nav li a:hover:not(.active) { background-color: #00FFB2; }*/
+
+#navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #007F59;
+}
+
+#navbar nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*******************************************************************************/
+/** FOOTER **/
+footer .fa { font-size: 50px; }
+footer ul { 
+    list-style-type: none; 
+    padding-left:0px;
+}
+
+footer{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+footer a{
+    text-decoration: none;
+    color:#134032;
+}
+
+footer li{
+    margin:10px;
+    font-size:20px;
+    text-decoration: none;
+    color:#134032;
+}
+
+footer hr{
+    width:90%;
+    color: rgba(0,0,0,.1);
+    background-color: #134032;
+    height:2px;
+    border:0;
+}
+
+/*******************************************************************************/
+/** DROPDOWN **/
+
+#breed_select{
+    text-align:center;
+}
+
+#breed_select *{
+    text-align:left;
+}
+
+#breed_dropdown{
+    max-height:400px;
+}
+
+.dropbtn {
+    background-color: #00CC8E;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #007F59;
+}
+
+#browseInput {
+    border-box: box-sizing;
+    background-image: url('https://www.w3schools.com/howto/searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#browseInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+/*******************************************************************************/
+/** PUG GRID **/
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.pugs_box .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.pugs_box .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .pugs_box .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .pugs_box .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
