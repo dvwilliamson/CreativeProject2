@@ -94,6 +94,8 @@ footer hr{
 /*******************************************************************************/
 /** DROPDOWN **/
 
+button{ font-family: 'Kranky', cursive; }
+
 #breed_select{
     text-align:center;
 }
