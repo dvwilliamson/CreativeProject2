@@ -170,21 +170,21 @@ footer hr{
 }
 
 /* Create four equal columns that sits next to each other */
-.pugs_box .column {
+.image_box .column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }
 
-.pugs_box .column img {
+.image_box .column img {
     margin-top: 8px;
     vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-    .pugs_box .column {
+    .image_box .column {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
@@ -193,7 +193,7 @@ footer hr{
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-    .pugs_box .column {
+    .image_box .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
